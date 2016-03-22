@@ -55,8 +55,9 @@ namespace spec
 
 		TEST_METHOD(multipleNodes)
 		{
+			Assert::IsTrue(compare(reverseLinkedList(createList(123456)), 654321), L"Multiple nodes case failed.", LINE_INFO());
+
 			Assert::IsTrue(compare(reverseLinkedList(createList(289)), 982), L"Multiple nodes case failed.", LINE_INFO());
-			Assert::IsTrue(compare(reverseLinkedList(createList(908234)), 432809), L"Multiple nodes case failed.", LINE_INFO());
 			Assert::IsTrue(compare(reverseLinkedList(createList(00000)), 00000), L"Multiple nodes case failed.", LINE_INFO());
 			Assert::IsTrue(compare(reverseLinkedList(createList(347634437)), 734436743), L"Multiple nodes case failed.", LINE_INFO());
 			Assert::IsTrue(compare(reverseLinkedList(createList(223344)), 443322), L"Multiple nodes case failed.", LINE_INFO());
